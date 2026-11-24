@@ -1,0 +1,106 @@
+<odoo>
+    <record id = "model_a_view_list" model = "ir.ui.view">
+        <field name = "name">model_a list</field>
+        <field name = "model">model_a</field>
+        <field name = "arch" type = "xml">
+
+            <list>
+
+                <field name = "name"/>
+                <field name = "date_availability" optional="1"/>
+                <field name = "postcode"/>
+                <field name = "expected_price"/>
+                <field name = "selling_price"/>
+                <field name = "bedroom"/>
+                <field name = "living_area"/>
+                <field name = "facades" optional="1"/>
+                <field name = "garage"/>
+                <field name = "grden_area" optional="1"/>
+                <field name = "garden_orientation" optional="1"/>
+            
+            </list>
+        </field>
+
+    </record>
+
+    <record id = "model_a_view_Form" model = "ir.ui.view">
+        <field name = "name">model_a Form</field>
+        <field name = "model">model_a</field>
+        <field name = "arch" type = "xml">
+            <form>
+                <sheet>
+                    <div class = "oe_titel">
+                        <label for = "name"/>
+                        <h1>
+                           <field name = "name"/> 
+                        </h1>
+
+                    </div>
+                    <group>
+                        <group string = "genaral Info ">
+                            
+                            <field name = "date_availability"/>
+                            <field name = "postcode"/>
+                            <field name = "expected_price"/>
+                            <field name = "selling_price"/>
+                
+                        </group>
+                        <group  string = "addtional  Info ">
+                            <field name = "bedroom"/>
+                            <field name = "living_area"/>
+                            <field name = "facades"/>
+                            <field name = "garage"/>
+                            <field name = "grden_area"/>
+                            <field name = "garden_orientation"/>
+
+
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+
+    </record>
+
+    <record id = "model_a_view_search" model = "ir.ui.view">
+        <field name = "name">model_a search</field>
+        <field name = "model">model_a</field>
+        <field name = "arch" type = "xml">
+            <search>
+                
+                <field name = "name" />
+                <field name = "postcode" />
+
+            </search>
+
+        </field>
+
+    </record>
+
+    <record id = "model_a_action" model = "ir.actions.act_window">
+        <field name = "name">model_a action</field>
+        <field name = "res_model">model_a</field>
+
+    </record>
+
+
+    <menuitem
+    id = "proprte_menu_item"
+    name = "proprites"
+    parent = "model_a_main_menu"
+    action = "model_a_action"
+
+    />
+
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

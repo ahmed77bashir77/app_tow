@@ -1,0 +1,19 @@
+<odoo>
+   <menuitem
+   id = "model_a_root_menu"
+   name = "Real State99"
+   />
+   <menuitem
+   id = "model_a_main_menu"
+   name = "proprites"
+   parent = "model_a_root_menu"
+   />
+
+
+
+
+
+
+
+
+</odoo>
